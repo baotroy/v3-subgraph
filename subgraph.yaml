@@ -14,12 +14,14 @@ dataSources:
     network: avalanche
     source:
       # address: '0xc36442b4a4522e871399cd717abdd847ab11fe88'
-      address: '0x655C406EBFa14EE2006250925e54ec43AD184f8B'
+      address: '0x655C406EBFa14EE2006250925e54ec43AD184f8B' # avax
+      # address: '0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1' #base
       abi: NonfungiblePositionManager
-      startBlock: 31422450
+      startBlock: 31422450 #avax
+      # startBlock: 1371714 #base
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.7
+      apiVersion: 0.0.4
       language: wasm/assemblyscript
       file: ./src/mappings/position-manager.ts
       entities:
